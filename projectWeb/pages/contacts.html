@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — SweetLab</title>
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="../index.html"><span class="logo__mark">🍰</span> SweetLab</a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="../index.html">Главная</a>
+        <a class="nav__link" href="catalog.html">Каталог</a>
+        <a class="nav__link" href="cart.html">Корзина</a>
+        <a class="nav__link" href="about.html">О нас</a>
+        <a class="nav__link is-active" href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h1 class="h1">Контакты</h1>
+        <p class="muted">Можно написать нам и оставить заявку на заказ</p>
+      </div>
+
+      <section class="grid grid--two">
+        <article class="panel">
+          <h2 class="h2">Как нас найти</h2>
+          <ul class="list">
+            <li><b>Город:</b>Астана</li>
+            <li><b>Телефон:</b> +7 700 722 0508</li>
+            <li><b>Instagram:</b> @sweetlab</li>
+            <li><b>Время:</b> 10:00–22:00</li>
+          </ul>
+          <div class="note">
+            <p class="muted">Работаем ежедневно без выходных!</p>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h2 class="h2">Форма заявки</h2>
+
+          <form class="form" action="#" method="post">
+            <label class="field">
+              <span class="field__label">Имя</span>
+              <input class="input" type="text" name="name" placeholder="Например: Алина" />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Email</span>
+              <input class="input" type="email" name="email" placeholder="name@email.com" />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Что хотите заказать?</span>
+              <input class="input" type="text" name="product" placeholder="Торт / капкейки / набор" />
+            </label>
+
+            <fieldset class="field">
+              <legend class="field__label">Способ получения</legend>
+              <div class="radios">
+                <label class="check">
+                  <input type="radio" name="delivery" value="pickup" />
+                  <span>Самовывоз</span>
+                </label>
+                <label class="check">
+                  <input type="radio" name="delivery" value="delivery" />
+                  <span>Доставка</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="check check--wide">
+              <input type="checkbox" name="agree" />
+              <span>Согласен(а) на обработку данных</span>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Отправить</button>
+          </form>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© SweetLab, 2026</p>
+      <p class="muted">Контакты</p>
+    </div>
+  </footer>
+</body>
+</html>

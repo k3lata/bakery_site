@@ -1,0 +1,55 @@
+/* base.css */
+:root{
+    --bg: #fff7fb;          /* нежно-розовый фон */
+    --surface: #ffffff;     /* карточки */
+    --text: #2b1b22;        /* тёплый темный текст */
+    --muted: #8a6b78;
+  
+    --accent: #ff4d8d;      /* яркий акцент (кнопки/ссылки) */
+    --accent-2: #d83a73;    /* темнее */
+  
+    --pink-soft: rgba(255, 77, 141, 0.10);
+    --pink-soft-2: rgba(255, 77, 141, 0.06);
+  
+    --border: rgba(43,27,34,0.10);
+    --shadow: 0 14px 36px rgba(43,27,34,0.10);
+  
+    --radius: 20px;
+    --radius-sm: 14px;
+  
+    --container: 1100px;
+  }
+  
+  body{
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background:
+      radial-gradient(900px 520px at 15% 0%, rgba(255, 77, 141, 0.10) 0%, transparent 60%),
+      radial-gradient(850px 600px at 100% 25%, rgba(255, 153, 197, 0.16) 0%, transparent 55%),
+      radial-gradient(700px 500px at 50% 100%, rgba(255, 232, 242, 0.85) 0%, transparent 55%),
+      var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  
+  .container{
+    width: min(var(--container), calc(100% - 32px));
+    margin-inline: auto;
+  }
+  
+  .h1{ font-size: clamp(28px, 4vw, 44px); line-height: 1.15; letter-spacing: -0.02em; }
+  .h2{ font-size: clamp(20px, 2.6vw, 28px); line-height: 1.2; letter-spacing: -0.01em; }
+  .h2--sm{ font-size: 18px; }
+  
+  .text{ font-size: 16px; color: rgba(43,27,34,0.92); }
+  .muted{ color: var(--muted); font-size: 14px; }
+  
+  .link{
+    color: var(--accent);
+    font-weight: 700;
+  }
+  
+  .price{
+    font-weight: 900;
+    letter-spacing: 0.01em;
+  }
+  

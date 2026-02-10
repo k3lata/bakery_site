@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог — SweetLab</title>
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="../index.html"><span class="logo__mark">🍰</span> SweetLab</a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="../index.html">Главная</a>
+        <a class="nav__link is-active" href="catalog.html">Каталог</a>
+        <a class="nav__link" href="cart.html">Корзина</a>
+        <a class="nav__link" href="about.html">О нас</a>
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h1 class="h1">Каталог десертов</h1>
+      </div>
+
+      <section class="catalog">
+        <aside class="filters" aria-label="Фильтры (пока визуально)">
+          <h2 class="h2 h2--sm">Категории</h2>
+          <div class="filters__group">
+            <button class="pill is-active" type="button">Все</button>
+            <button class="pill" type="button">Торты</button>
+            <button class="pill" type="button">Капкейки</button>
+            <button class="pill" type="button">Пирожные</button>
+          </div>
+        </aside>
+
+        <section class="grid grid--cards" id="catalog-grid">
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© SweetLab, 2026</p>
+      <p class="muted">Каталог</p>
+    </div>
+  </footer>
+  <script src ="../js/catalog.js"></script>
+</body>
+</html>

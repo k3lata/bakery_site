@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Корзина — SweetLab</title>
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="../index.html"><span class="logo__mark">🧁</span> SweetLab</a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="../index.html">Главная</a>
+        <a class="nav__link" href="catalog.html">Каталог</a>
+        <a class="nav__link is-active" href="cart.html">Корзина</a>
+        <a class="nav__link" href="about.html">О нас</a>
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h1 class="h1">Корзина</h1>
+      </div>
+
+      <section class="cart">
+        <div class="panel cart__items">
+          <h2 class="h2 h2--sm">Ваши позиции</h2>
+          
+          <div class="emptyState" id="empty-state">
+            <div class="emptyState__icon">🧺</div>
+            <p class="emptyState__title">Корзина пустая</p>
+            <p class="muted">Зайди в каталог и добавь что-нибудь вкусное ✨</p>
+            <a class="btn btn--primary" href="catalog.html">Перейти в каталог</a>
+          </div>
+
+          <div class="cart__items cartList" id="cart-items"></div>
+
+        <aside class="panel panel--accent cart__summary">
+          <h2 class="h2 h2--sm">Итог</h2>
+
+          <div class="summaryRow">
+            <span class="muted">Товары</span>
+            <span id="total-count">0</span>
+          </div>          
+
+          <div class="summaryRow">
+            <span class="muted">Сумма</span>
+            <span class="price" id="total-price">0 ₸</span>
+          </div>
+
+          <div class="summaryRow">
+            <span class="muted">Доставка</span>
+            <span>—</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <button class="btn btn--primary" type="button" id="checkout-btn">
+            Оформить заказ
+          </button>          
+
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© SweetLab, 2026</p>
+      <p class="muted">Корзина</p>
+    </div>
+  </footer>
+  <script src="../js/cart.js"></script>
+</body>
+</html>

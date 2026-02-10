@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SweetLab — кондитерская</title>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark">🍰</span> SweetLab
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link is-active" href="index.html">Главная</a>
+        <a class="nav__link" href="pages/catalog.html">Каталог</a>
+        <a class="nav__link" href="pages/cart.html">Корзина</a>
+        <a class="nav__link" href="pages/about.html">О нас</a>
+        <a class="nav__link" href="pages/contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="h1">Десерты, которые делают день лучше</h1>
+          <p class="text">
+            Печём капкейки, торты и эклеры. Можно заказать набор на праздник или просто «к чаю».
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="pages/catalog.html">Смотреть каталог</a>
+            <a class="btn btn--ghost" href="pages/contacts.html">Оставить заявку</a>
+          </div>
+
+          <ul class="badges" aria-label="Преимущества">
+            <li class="badge">Свежая выпечка каждый день</li>
+            <li class="badge">Быстрый самовывоз</li>
+            <li class="badge">Наборы на праздники</li>
+          </ul>
+        </div>
+
+        <div class="hero__card" role="img" aria-label="Витрина сладостей">
+          <div class="hero__cardInner">
+            <p class="hero__title">Сегодня в топе</p>
+            <ul class="miniList">
+              <li>🍓 Чизкейк клубничный</li>
+              <li>🍫 Брауни с орехом</li>
+              <li>🍋 Лимонный тарт</li>
+            </ul>
+            <p class="hero__note">Открой каталог — там больше вкусного!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Популярные десерты</h2>
+          <p class="muted">Мини-подборка из каталога</p>
+        </div>
+
+        <div class="grid grid--cards">
+          <article class="card">
+            <div class="card__media" aria-hidden="true">
+                <img src="images/cupcake.jpg" alt="Капкейк">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Капкейки ваниль</h3>
+              <p class="card__text">Нежный крем, мягкий бисквит.</p>
+              <div class="card__meta">
+                <span class="price">1 200 ₸</span>
+                <a class="link" href="pages/catalog.html">В каталог →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media" aria-hidden="true">
+                <img src="images/brownie.jpg" alt="Брауни “Шоколад”">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Брауни</h3>
+              <p class="card__text">Шоколадный, чуть влажный внутри.</p>
+              <div class="card__meta">
+                <span class="price">1 500 ₸</span>
+                <a class="link" href="pages/catalog.html">В каталог →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media" aria-hidden="true">
+                <img src="images/strawberryCheesecake.jpg" alt="Чизкейк “Клубника”">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Чизкейк клубничный</h3>
+              <p class="card__text">Сливочная основа + ягодный слой.</p>
+              <div class="card__meta">
+                <span class="price">2 700 ₸</span>
+                <a class="link" href="pages/catalog.html">В каталог →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container cta">
+        <div class="cta__text">
+          <h2 class="h2">Нужен торт на праздник?</h2>
+          <p class="text">Оставь заявку — уточним вкус, размер и дату.</p>
+        </div>
+        <a class="btn btn--primary" href="pages/contacts.html">Оставить заявку</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© SweetLab, 2026</p>
+    </div>
+  </footer>
+  <script src ="script.js"></script>
+</body>
+</html>
